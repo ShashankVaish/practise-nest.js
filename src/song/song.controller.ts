@@ -1,12 +1,13 @@
-import { Controller, Get,Put,Delete, Post } from '@nestjs/common';
+import { Controller, Get,Put,Delete, Post, Body } from '@nestjs/common';
 import {SongService} from './song.service'
+import {SongValidatorClass} from '../DTO/song-validator-class';
 @Controller('song')
 export class SongController {
     constructor(private readonly songsService: SongService){}
 
     @Post()
-    createsong(){
-        return this.songsService.createSong("saiyaara by arjit singh")
+    createsong(@Body() songvalidater:SongValidatorClass){
+        return this.songsService.createSong("songvalidater");
     }
     @Get()
     getsongs():string{
