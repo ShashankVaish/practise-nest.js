@@ -15,15 +15,15 @@ export class SongController {
     }
     @Get(':id')
     getsong():string{
-        return 'your  song is ';
+        return 'your song is';
     }
     @Put(':id')
     updatesong():string{
-        return 'your  song is updated ';
+        return 'your  song is updated';
     }
     @Delete(':id')
     deletesong():string{
-        return 'your  song is deleted ';
+        return 'your song is deleted';
     }
     
 }
