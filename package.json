@@ -6,17 +6,17 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-  "start": "node dist/main.js",
-  "start:dev": "nest start --watch --compiler swc",
-  "build": "swc src -d dist",
-  "build:watch": "swc src -d dist --watch"
-},
-
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch --compiler swc",
+    "build": "swc src -d dist",
+    "build:watch": "swc src -d dist --watch"
+  },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
     "@prisma/client": "^6.13.0",
+    "argon2": "^0.43.1",
     "class-transform": "^0.7.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.2",
